@@ -2,30 +2,26 @@ import { createRoot } from "react-dom/client"
 import reactLogo from '/assets/react.svg'
 const root = createRoot(document.getElementById("root"))
 
-/**
-Challenge: 
-
-Part 2: 
-- Add a `<header>` element with an `<img />` element with the image of the 
-  React logo inside (src="react-logo.png") and make sure to set the 
-  width to something more manageable so it doesn't take up the whole screen.
-  Also, as always, you should include some alt text on the image.
-- Add an `<h1>` with some text describing the page. (E.g. "Reasons
-  I'm excited to learn React"). Place it above the ordered list, then wrap
-  the `<h1>` and `<ol>` inside a `<main>` element to keep our semantic
-  structure flowing well.
-- Add a `<footer>` after the list that says: 
-    "© 20xx <last name here> development. All rights reserved."
+/** Mini Challenge:
+ * 
+ * Move the `header` element from the Page component into 
+ * its own component called "Header"
+ * 
+ * Then render an instance of the Header component inside
+ * the Page component where the `header` used to be.
  */
 
-
-function Page() {
+function Header() {
   return (
-    <div>
       <header>
         <img src={reactLogo} alt="Test Image" />
       </header>
-      <main>
+  )
+}
+
+function Main() {
+  return (
+     <main>
         <h1>Reasons I am excited to learn react</h1>
       <ol>
         <li>React is a popular library, so I will be able to
@@ -34,13 +30,30 @@ function Page() {
           if I know React</li>
       </ol>
       </main>
-      <footer>
+  )
+}
+
+function Footer() {
+  return (
+     <footer>
         © 2025 development. All rights reserved.
       </footer>
-    </div>
+  )
+}
+
+function Page() {
+  return (
+    <>
+    <Header/>
+      <Main/>
+      <Footer/>
+    </>
   )
 }
 
 root.render(
   <Page />
 )
+
+
+/* Use of fragment can help remove the use of extra divs, don't have to import fragment but use <> */
