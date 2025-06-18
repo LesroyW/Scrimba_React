@@ -1,20 +1,21 @@
 import { createRoot } from "react-dom/client"
 import reactLogo from '/assets/react.svg'
-const root = createRoot(document.getElementById("root"))
+import './index.css'
 
-/** Mini Challenge:
- * 
- * Move the `header` element from the Page component into 
- * its own component called "Header"
- * 
- * Then render an instance of the Header component inside
- * the Page component where the `header` used to be.
- */
+
+const root = createRoot(document.getElementById("root"))
 
 function Header() {
   return (
-      <header>
-        <img src={reactLogo} alt="Test Image" />
+      <header className="header">
+        <img className="header-image" src={reactLogo} alt="Test Image" />
+        <nav>
+          <ul className="nav-list">
+            <li className="nav-list-item">Pricing</li>
+            <li className="nav-list-item">About</li>
+            <li className="nav-list-item">Contact</li>
+          </ul>
+        </nav>
       </header>
   )
 }
