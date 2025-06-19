@@ -1,5 +1,14 @@
+import reactLogo from '../assets/react-icon.png'
+
 export default function Navbar() {
     return (
-        <h1>Navbar goes here</h1>
+        <>
+        <header className='Navbar'>
+            <nav>
+<img src={reactLogo} />
+<span >ReactFacts</span>
+            </nav>
+            </header>
+        </>
     )
 }
