@@ -6,10 +6,6 @@ import Footer from "./Footer.jsx"
 
 const root = createRoot(document.getElementById("root"))
 
-
-
-
-
 function Page() {
   return (
     <>
