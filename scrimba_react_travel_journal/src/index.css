@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 550px;
+  height: 740px;
+  font-family: Inter, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+
+
+}
+
+nav > img {
+  width: 24px;
+  -webkit-filter: invert(100%);
+    filter: invert(100%);
+  margin-right: 10px;
+}
+
+nav > span {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+header {
+  background-color: #f55a5a;
+  padding: 10px 25px;
+}
+
+.mountFuji {
+  width: 125px;
+  margin-top: 30px;
+  margin-right: 285px;
+  display: inline-block;
+}
+
+.marker {
+  width: 125px;
+  display: inline-block;
+}
