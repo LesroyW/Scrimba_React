@@ -1,49 +1,61 @@
-* {
-    box-sizing: border-box;
+html, body {
+    margin: 0;
 }
 
 body {
-  margin: 0;
-  width: 550px;
-  height: 740px;
-  font-family: Inter, sans-serif;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    justify-content: center;
-
-
-}
-
-nav > img {
-  width: 24px;
-  -webkit-filter: invert(100%);
-    filter: invert(100%);
-  margin-right: 10px;
-}
-
-nav > span {
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: 500;
+  font-family: Inter;
 }
 
 header {
-  background-color: #f55a5a;
-  padding: 10px 25px;
+    background: #F55A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 55px;
 }
 
-.mountFuji {
-  width: 125px;
-  margin-top: 30px;
-  margin-right: 285px;
-  display: inline-block;
+header > img {
+    width: 24px;
+    margin-right: 7px;
+}
+
+header > h1 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: Inter;
+}
+
+article.journal-entry {
+    display: flex;
+}
+
+.main-image-container {
+    width: 125px;
+    height: 168px;
+    overflow: hidden; 
+    border-radius: 5px;
+    flex-shrink: 0;
+    padding: 20px;
+}
+
+.main-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.journal-content {
+  padding-top: 25px;
+  text-align: left;
 }
 
 .marker {
-  width: 125px;
-  display: inline-block;
+  width: 25px;
+}
+
+div > span {
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 30px;
 }
